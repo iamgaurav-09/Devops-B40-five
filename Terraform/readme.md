@@ -156,10 +156,19 @@ Ansible and Terraform are two popular tools in the infrastructure-as-code (IaC) 
 
 **Advantages**
 
-**Infrastructure as Code:** Terraform enables the use of Infrastructure as Code, where infrastructure is treated as software and can be version controlled, tested, and deployed using code. 
-**Multi-Cloud Support:** Terraform supports multiple cloud platforms, making it easier to deploy and manage infrastructure across different environments. 
-**Consistency and Standardization:** Terraform ensures consistency and standardization of infrastructure across different environments, reducing the risk of errors and increasing the efficiency of deployment. 
-**Flexibility:** Terraform provides flexibility in terms of configuration and deployment, allowing for quick changes and modifications to the infrastructure. 
+**Infrastructure as Code:** 
+
+Terraform enables the use of Infrastructure as Code, where infrastructure is treated as software and can be version controlled, tested, and deployed using code. 
+**Multi-Cloud Support:** 
+
+Terraform supports multiple cloud platforms, making it easier to deploy and manage infrastructure across different environments. 
+**Consistency and Standardization:** 
+
+Terraform ensures consistency and standardization of infrastructure across different environments, reducing the risk of errors and increasing the efficiency of deployment. 
+**Flexibility:** 
+
+Terraform provides flexibility in terms of configuration and deployment, allowing for quick changes and modifications to the infrastructure. 
+
 
 1.Terraform internally uses the DAG(direct acyclic graph) technique to get the best results. 
 
