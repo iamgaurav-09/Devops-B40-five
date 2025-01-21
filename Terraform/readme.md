@@ -151,25 +151,42 @@ Ansible and Terraform are two popular tools in the infrastructure-as-code (IaC) 
 **Flexibility:** Terraform provides flexibility in terms of configuration and deployment, allowing for quick changes and modifications to the infrastructure. 
 
 1.Terraform internally uses the DAG(direct acyclic graph) technique to get the best results. 
+
 2.Terraform supports a variety of cloud options, and switching providers is a breeze. 
+
 3.Because the whole infrastructure is managed as code, incremental resource changes are not a problem. 
+
 4.Supports scripts that span many regions. For instance, we can search for an ami in us-east-1 and use that information to build an ec2 instance in us-east-2. 
+
 5.Effective networking assistance. It might take months to build an on-premise data center, but using Terraform, it can be done in a matter of hours. 
+
 6.Integrates easily with the build and deployment processes. 
+
 7.Modular architecture. 
+
 8.State upkeep. Terraform will reconstruct any objects produced by it if another process removes them. 
+
 9.Allows for the import of existing resources to convert them to a Terraform state.
 
 **Disadvantages**
 
 1.Currently under development. Each month, we release a beta version. 
+
 2.The concerns are more connected to Terraform’s (AWS) provider teams. For example, Terraform AWS’s quick sight does not yet support all features. 
+
 3.Technology with a narrow application. To write loops or if blocks, intuition is required. Nonetheless, several hacks are accessible online. 
-4.Specific configurations, such as the terraform backend, are not accessible through var files. Therefore, either give the information in place or construct a backend-config block during Terraform’s initialization. 
+
+4.Specific configurations, such as the terraform backend, are not accessible through var files. Therefore, either give the information in place or construct a backend-
+config block during Terraform’s initialization. 
+
 5.There is no error handling. This implies that we cannot utilize try-catch in the manner we do in other languages. 
+
 6.There is no way to roll back. As a result, we must delete everything and re-run if necessary. 
+
 7.A few things are prohibited from import. 
+
 8.Terraform does not support script generation from the state. 
+
 9.Terraform acknowledges that specific versions may include bugs. 
 
 
