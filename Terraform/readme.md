@@ -173,6 +173,8 @@ Terraform ensures consistency and standardization of infrastructure across diffe
 Terraform provides flexibility in terms of configuration and deployment, allowing for quick changes and modifications to the infrastructure. 
 
 
+
+
 1.Terraform internally uses the DAG(direct acyclic graph) technique to get the best results. 
 
 2.Terraform supports a variety of cloud options, and switching providers is a breeze. 
