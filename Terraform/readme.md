@@ -28,50 +28,61 @@
 
 
 **Multi-Cloud Support**
+
 Terraform is an open-source tool designed for provisioning and managing infrastructure across different cloud providers, such as AWS, Azure, Google Cloud, and on-premise environments. It provides a consistent syntax and workflow when managing resources across different clouds.
 
 CloudFormation is an AWS native service specifically created to provision and manage resources on AWS. Embedded deeply within their ecosystem, this standardized way to describe and deploy infrastructure makes CloudFormation invaluable in meeting resource demand across an AWS environment.
 
 **Language and Syntax**
+
 Terraform utilizes HashiCorp Configuration Language (HCL), an easy and concise domain-specific language specifically tailored for describing infrastructure as code. HCL lets users easily define resources, variables, and other configuration elements with concise syntax.
 
 AWS CloudFormation supports both JSON and YAML formats to describe infrastructure. JSON can provide machine-friendly data representation, while YAML facilitates natural, structured representations of resources with their relationships.
 
 **Declarative vs. Templating**
+
 Terraform is a declarative tool, while CloudFormation is templating. Terraform's configuration files describe your desired state, while CloudFormation templates outline how it should approach reaching this state.
 
 **Ecosystem Integrations**
+
 Terraform boasts an expansive ecosystem of providers and modules developed by its community that allow it to integrate with various tools, cloud platforms, and services. CloudFormation, on the other hand, excels at AWS-specific integrations.
 
 **State Management**
+
 Terraform relies on a state file that records the actual state of the deployed infrastructure. This state file is essential for tracking changes, detecting drift, and planning updates to the infrastructure. The state can be stored locally or in remote backends like Amazon S3 or Consul.
 
 AWS CloudFormation manages the state of stacks internally without exposing it directly to users. Users interact with stacks through CloudFormation's API, and the tool internally manages the state of resources associated with each stack.
 
 **Resource Lifecycle Management**
+
 Terraform provides a "plan-apply" model. When you make changes to the infrastructure configuration, you generate an execution plan first ("terraform plan"), which shows the proposed changes. After reviewing the plan, you apply the changes ("terraform apply") to create, modify, or delete resources.
 
 AWS CloudFormation utilizes a "create-update-delete" model. You define the desired state of your infrastructure using CloudFormation templates. During updates, CloudFormation determines what changes are needed to bring the stack's actual state in line with the desired state and applies those changes.
 
 **Ecosystem and Extensibility**
+
 With plugins, you can extend Terraform's functionality to support new providers, data sources, and resources. You can also write your own plugins to customize Terraform to your specific needs. Plus, there is already a ton of community-contributed plugins available that you can easily integrate into your workflows.
 
 AWS CloudFormation integrates tightly with AWS services, enabling seamless management of AWS resources. However, its scope is limited to AWS services, and there is no direct support for managing resources from other cloud providers.
 
 **Drift Detection**
+
 Terraform provides built-in drift detection, allowing you to identify discrepancies between the infrastructure's current state and the state described in your configuration. This is useful for identifying manual changes or unexpected modifications.
 
 AWS CloudFormation's drift detection is specific to CloudFormation-managed stacks. It directly compares the current state with the template-defined state. It helps ensure that the resources deployed through CloudFormation remain in the expected state.
 
 **Interpolation and Functions**
+
 Terraform provides an extensive set of interpolation functions that allow you to dynamically generate values based on other values or inputs, making your configurations more flexible and easier to manage.
 
 AWS CloudFormation offers intrinsic functions that allow you to perform tasks like referencing other resource attributes, performing basic calculations, and conditional logic within your templates. While not as comprehensive as Terraform's interpolation functions, they still offer essential dynamic capabilities.
 
 **Learning Curve**
+
 While Terraform and AWS CloudFormation have relatively gentle learning curves, the choice may depend on the team's existing knowledge and expertise. Developers familiar with AWS services may find AWS CloudFormation more intuitive, while those with experience in multiple cloud environments may prefer Terraform.
 
 **Community support**
+
 Terraform boasts a larger and more active community than CloudFormation, so there are more resources to assist users when learning and using Terraform.
 
 
