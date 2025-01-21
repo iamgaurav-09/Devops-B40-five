@@ -242,6 +242,8 @@ Each AWS service or resource type corresponds to a specific resource provider in
 
 <img width="584" alt="image" src="https://github.com/user-attachments/assets/2479aa3f-e724-470b-8cbb-fd03f175fd20" />
 
+---
+
 **AZURE**
 
 A cloud computing platform and service provided by Microsoft. It offers a wide range of cloud-based services and solutions, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) that can be used for various computing, storage, analytics, databases, networking, machine learning, and application deployment needs.
@@ -252,6 +254,8 @@ Each Azure service or resource type has its own resource provider in Terraform, 
 
 <img width="584" alt="image" src="https://github.com/user-attachments/assets/20ff8e0c-8ff5-4b00-bf7a-86288dedd849" />
 
+---
+
 **Google Cloud**
 
 Google Cloud, often referred to as Google Cloud Platform (GCP), is a comprehensive suite of cloud computing services provided by Google. It offers a wide range of cloud-based solutions for computing, storage, databases, machine learning, data analytics, and more.
@@ -260,6 +264,7 @@ The Google Cloud Terraform Provider is used to configure your Google Cloud Platf
 
 <img width="584" alt="image" src="https://github.com/user-attachments/assets/2614078d-4eb3-4dc8-b299-da7f8adceca9" />
 
+---
 
 ![image](https://github.com/user-attachments/assets/fda973da-a60d-4831-a473-d890fc0db479)
 
